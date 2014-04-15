@@ -29,5 +29,5 @@ For now there is only one optimization there.
 
 * MySQL INNER JOIN with order fails to optimize query that ends up with seconds
   to get result, but STRAIGHT\_JOIN instead of INNER JOIN solves the issue and
-  we can get result in 0.001 instead of 3+ seonds.
+  we can get result in 0.001 instead of 3+ seconds.
   https://code.djangoproject.com/ticket/22438
