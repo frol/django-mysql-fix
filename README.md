@@ -27,7 +27,7 @@ Compatibility
 
 Tested with Django master branch and Django 1.6.0+.
 
-It doesn't work with Django &lte; 1.5.x.
+It doesn't work with Django <= 1.5.x.
 
 
 Fixed issues
