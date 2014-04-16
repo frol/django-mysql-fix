@@ -9,6 +9,17 @@ We are going to test possible regressions that might appear in real projects.
 This backend will pass all Django tests, but we still have to test it in real projects.
 
 
+How does it affect me?
+======================
+
+There are two very simple ways to cacth INNER JOIN bug:
+
+* Once you specify field from foreign table in `list_display` in your Django Admin model;
+* Once you try to sort (order) by field from foreign table.
+
+In these cases even if you limit query by 1 it will join whole tables, order them and only after that it will slice it to limit. Thus if you have i.e. 400k records in two tables it would take 3+ seconds to get small slice. STRAIGHT_JOIN forces MySQL work as we expect: order -> slice -> join.
+
+
 How to use
 ==========
 
