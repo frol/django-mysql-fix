@@ -22,6 +22,14 @@ Specify django-mysql-fix backend in your DATABASES setting in Django settings.py
     }
 
 
+Compatibility
+=============
+
+Tested with Django master branch and Django 1.6.0+.
+
+It doesn't work with Django &lte; 1.5.x.
+
+
 Fixed issues
 ============
 
