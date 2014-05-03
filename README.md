@@ -6,13 +6,13 @@ This project contains optimizations (hacks) for MySQL for Django ORM.
 It's based on Django 1.7 (master branch). It was started on PyCon 2014 Development Sprint.
 
 We are going to test possible regressions that might appear in real projects.
-This backend will pass all Django tests, but we still have to test it in real projects.
+This backend passes all Django tests, but we still have to test it in real projects.
 
 
 How does it affect me?
 ======================
 
-There are two very simple ways to cacth INNER JOIN bug:
+There are two very simple ways to catch INNER JOIN bug:
 
 * Once you specify field from foreign table in `list_display` in your Django Admin model;
 * Once you try to sort (order) by field from foreign table.
